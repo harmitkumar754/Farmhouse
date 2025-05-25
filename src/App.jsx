@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Vite + React Tailwind CSS</h1>
+      <h1>Vite + React hello harmit CSS</h1>
     </>
   )
 }
