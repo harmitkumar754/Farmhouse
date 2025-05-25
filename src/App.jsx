@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './component/Header'
+import HighlyAffordable from './component/HighlyAffordable'
 import AboutUs from './component/AboutUs'
 
 function App() {
@@ -10,7 +11,10 @@ function App() {
 
   return (
     <>
-      <Header/>   
+      <Header/>
+      <HighlyAffordable/>
+     
+
       <AboutUs/>
     </>
   )
