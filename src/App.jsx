@@ -8,8 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Vite + React hello om12 CSS</h1>
-      <h1>om</h1>
+      <h1 className='bg-green-300'>okok</h1>
      
 
     </>
