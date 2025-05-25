@@ -11,8 +11,10 @@ function App() {
       <h1>Vite + React hello om12 CSS</h1>
       <h1>om</h1>
       <h1>om love kaki1</h1>
+      <h1>om love kaki1</h1>
+      <h1>om love kaki1</h1>
       <h1>om love kaki2</h1>
-      <h1>om love kaki3</h1>    </>
+    </>
   )
 }
 
