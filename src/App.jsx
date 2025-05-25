@@ -14,6 +14,9 @@ function App() {
       <h1>om love kaki2</h1>
       <h1>om love kaki3</h1>
       <h1>om love kaki4</h1>
+      <h1>om love kaki5</h1>
+      <h1>om love kaki6</h1>
+
     </>
   )
 }
