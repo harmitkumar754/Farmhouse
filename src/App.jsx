@@ -12,10 +12,7 @@ function App() {
   return (
     <>
       <Header/>
-      <HighlyAffordable/>
-     
-
-      <Header/>   
+      <HighlyAffordable/>   
     </>
   )
 }
