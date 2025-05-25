@@ -4,9 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './component/Header'
 import HighlyAffordable from './component/HighlyAffordable'
+import AboutUs from './component/AboutUs'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       <HighlyAffordable/>
      
 
+      <Header/>   
     </>
   )
 }
