@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <h1>Vite + React hello om CSS</h1>
+      <h1>Vite + React hello om12 CSS</h1>
     </>
   )
 }
