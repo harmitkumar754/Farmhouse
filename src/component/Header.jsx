@@ -3,7 +3,7 @@ import { DateRange } from 'react-date-range';
 import { format } from 'date-fns';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
-import { MapPin } from 'lucide-react';
+import { LocateFixed } from 'lucide-react';
 
 export default function Header() {
   //date
@@ -117,7 +117,7 @@ export default function Header() {
                   onClick={handleNearMe}
                   className="bg-gray-100 text-xs text-gray-700 px-2 py-1 rounded-full flex items-center"
                 >
-                  <MapPin size={20} strokeWidth={2} />
+                  <LocateFixed size={20} strokeWidth={2} />
                   {loading ? 'Locating...' : 'Near Me'}
                 </button>
 
