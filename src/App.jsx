@@ -12,7 +12,11 @@ function App() {
   return (
     <>
       <Header/>
-      <HighlyAffordable/>   
+      <HighlyAffordable/>
+     
+
+      <AboutUs/>
+      
     </>
   )
 }
