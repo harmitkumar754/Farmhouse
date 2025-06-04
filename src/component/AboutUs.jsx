@@ -25,7 +25,7 @@ export default function AboutUs() {
                     <h3 className='font-bold text-[32px] text-center mb-10'>How it Works?</h3>
                 </div>
                 <div>
-                    <div class="rounded flex gap-6  justify-center  ">
+                    <div className="rounded flex gap-6  justify-center  ">
                         <HowItWorksCard Icon={MapPin} title="Find Interesting Place" />
                         <HowItWorksCard Icon={TreePalm} title="Select Your Destination" />
                         <HowItWorksCard Icon={IndianRupee} title="Make a Payment" />
