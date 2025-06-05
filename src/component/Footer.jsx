@@ -82,9 +82,10 @@ const Footer = () => {
       </div>
 
       <div className="mt-6 flex flex-col md:flex-row items-center justify-between border-t pt-4 border-gray-200">
-        <p className="text-center text-gray-600 mb-3 md:mb-0">Download FarmhouseHub for exciting offers</p>
+        <p className="text-center text-gray-600 mb-3 md:mb-0">© 2025 Farmhouse Hub. All rights reserved.
+</p>
         <div className="flex gap-4">
-          <img
+          {/* <img
             src="https://farmhousehub.in/UserAssets/v2/images/googleplay-img.svg"
             alt="Google Play"
             className="h-10 hover:scale-105 transition duration-300 cursor-pointer"
@@ -93,7 +94,7 @@ const Footer = () => {
             src="https://farmhousehub.in/UserAssets/v2/images/appstore-img.svg"
             alt="App Store"
             className="h-10 hover:scale-105 transition duration-300 cursor-pointer"
-          />
+          /> */}
         </div>
       </div>
     </footer>

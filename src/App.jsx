@@ -20,7 +20,7 @@ function App() {
       <Viewfarm />
       <Cantfind />
       <PartnerCard />
-      <AppDownloadSection />
+      {/* <AppDownloadSection /> */}
       <Footer />
     </>
   )

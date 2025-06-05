@@ -21,7 +21,7 @@ const PartnerCard = () => {
         </div>
 
         {/* Right Image */}
-        <div className="w-40 md:w-56">
+        <div className="w-40 md:w-56 ">
           <img
             src="https://farmhousehub.in/UserAssets/v2/images/joinboost-img.svg"
             alt="List Farmhouse"

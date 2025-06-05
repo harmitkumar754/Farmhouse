@@ -3,12 +3,10 @@ import { Search } from 'lucide-react';
 
 function Cantfind() {
   return (
-   <div>
-    <div className='pt-35'>
-         <div className="py-12 px-4 md:px-12 bg-gray-100">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-10 rounded-lg">
+    <div className="py-12 px-4 md:px-12 bg-gray-100">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 rounded-lg">
         {/* Left Content */}
-        <div className="max-w-xl text-center md:text-left ps-30 ">
+        <div className="text-center md:text-left md:max-w-xl ms-35">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             Can’t find what you’re looking for?
           </h2>
@@ -22,17 +20,15 @@ function Cantfind() {
         </div>
 
         {/* Right Illustration */}
-        <div className="w-full md:w-[400px] flex justify-center pe-20  transform -translate-y-4 md:-translate-y-35 transform -translate-x-34">
+        <div className="w-full flex justify-center">
           <img
             src="https://farmhousehub.in/UserAssets/v2/images/lookingfor-img.svg"
             alt="Looking Illustration"
-            className="w-400 max-w-[400px] md:max-w-[450px] "
+            className="w-full max-w-xs md:max-w-md"
           />
         </div>
       </div>
     </div>
-    </div>
-   </div>
   );
 }
 

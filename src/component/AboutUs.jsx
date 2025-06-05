@@ -1,37 +1,45 @@
-import React from 'react'
+import React from 'react';
 import { MapPin, TreePalm, IndianRupee } from 'lucide-react';
+
 export default function AboutUs() {
 
-    function HowItWorksCard({ Icon, title }) {
-        return (
-            <div className=" container group  bg-white rounded-3xl shadow-2xl p-6 text-center h-60 w-120 transition duration-300 ease-in-out transform hover:-translate-y-4">
-                <div className="flex items-center justify-center w-28 h-28 border-8 border-green-600 p-2 bg-green-500 text-white rounded-full mx-auto mb-4 transition-transform duration-500 transform group-hover:scale-x-[-1]">
-                    <Icon size={60} />
-                </div>
-                <h4 className="text-[22px] font-bold mt-12">{title}</h4>
-            </div>
-        );
-    }
+  function HowItWorksCard({ Icon, title }) {
     return (
-        <>
-            <section>
-                <div className='container mx-auto px-4 '>
-                    <h3 className='text-4xl font-semibold'>About Farmhousehub</h3>
-                    <p className='px-4 text-justify opacity-70 my-6 text-[20px]'>Today we are westernising, with every virtue of activities and life style being brought up we look onwards to social gatherings and parties. Owning a farm house is not an easy ordeal, we at FarmhouseHub company look forward at providing the same virtue, we look into our customers and users and ensure the very fact that they get their satisfaction to their fullest the farmhouses are on the Highest trend with their demand sky rocketing every day as it passes.The very motive ensures the affordability to and the best medium of recreation to all our users and a passive mode of income to large end of the farm owners as well. With us it's our priority to ensure the safety and the proper accommodation whilst you enjoy and swirl into the parties of your own. For what they say Farm Houses are the newest of holiday destinations!</p>
-                </div>
-            </section>
-            <section className='bg-gray-100 py-20'>
-                <div>
-                    <h3 className='font-bold text-[32px] text-center mb-10'>How it Works?</h3>
-                </div>
-                <div>
-                    <div className="rounded flex gap-6  justify-center  ">
-                        <HowItWorksCard Icon={MapPin} title="Find Interesting Place" />
-                        <HowItWorksCard Icon={TreePalm} title="Select Your Destination" />
-                        <HowItWorksCard Icon={IndianRupee} title="Make a Payment" />
-                    </div>
-                </div>
-            </section>
-        </>
-    )
+      <div className="group bg-white rounded-3xl shadow-2xl p-6 text-center w-full max-w-sm transition duration-300 transform hover:-translate-y-4">
+        <div className="flex items-center justify-center w-24 h-24 border-8 border-green-600 p-2 bg-green-500 text-white rounded-full mx-auto mb-4 transition-transform duration-500 group-hover:scale-110">
+          <Icon size={50} />
+        </div>
+        <h4 className="text-xl font-bold mt-6">{title}</h4>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      {/* About Section */}
+      <section className='mb-20 mt-20'>
+        <div className='container mx-auto px-4 max-w-6xl '>
+          <h3 className='text-3xl md:text-4xl font-semibold text-center md:text-left'>About Farmhousehub</h3>
+          <p className='mt-6 text-justify text-gray-700 leading-relaxed text-[18px]'>
+            Today we are westernising, with every virtue of activities and lifestyle being brought up we look onwards to social gatherings and parties.
+            Owning a farmhouse is not an easy ordeal, we at FarmhouseHub look forward to providing the same virtue. We understand our customers and ensure their satisfaction to the fullest.
+            The demand for farmhouses is skyrocketing every day. Our goal is to make them affordable and a great medium of recreation for users — while also offering passive income for farm owners.
+            With us, safety and accommodation are a priority while you enjoy your personal celebrations. As they say, farmhouses are the newest holiday destinations!
+          </p>
+        </div>
+      </section>
+
+      {/* How it Works Section */}
+      <section className='bg-gray-100 py-20'>
+        <h3 className='text-2xl md:text-3xl font-bold text-center mb-10'>How it Works?</h3>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row gap-8 items-center justify-center flex-wrap">
+            <HowItWorksCard Icon={MapPin} title="Find Interesting Place" />
+            <HowItWorksCard Icon={TreePalm} title="Select Your Destination" />
+            <HowItWorksCard Icon={IndianRupee} title="Make a Payment" />
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }
