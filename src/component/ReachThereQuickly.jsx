@@ -1,4 +1,9 @@
-import { BedDouble, Building2, MapPin, Star, Percent } from "lucide-react";
+import { BedDouble, Building2, MapPin, Star, Percent ,Heart } from "lucide-react";
+
+
+
+import leMeridianImg from "../assets/Farmimg/FH854LeMeridian/FH854LeMeridian.jpg";
+
 
 const properties = [
   {
@@ -12,7 +17,7 @@ const properties = [
     priceNew: "₹20,486",
     discount: "39% off",
     rating: 4.3,
-    image: "/Farmimg/FH854LeMeridian/FH854LeMeridian.jpg",
+    image: leMeridianImg,
   },
   {
     id: "FH932",
@@ -63,17 +68,23 @@ const ReachThereQuickly = () => {
       <h2 className="text-2xl font-bold mb-6">Reach There Quickly</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {properties.map((property, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-lg rounded-lg overflow-hidden"
-          >
-            <img
-              src={property.image}
-              alt={property.name}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4 space-y-2">
-              <div className="flex items-center gap-3 text-sm text-gray-600">
+         <div
+  key={index}
+  className="relative bg-white shadow-lg rounded-lg overflow-hidden"
+>
+  <img
+    src={property.image}
+    alt={property.name}
+    className="w-full h-48 object-cover"
+  />
+
+  {/* Heart Icon */}
+  <button className="absolute top-3 right-3 bg-white p-1 rounded-full shadow hover:scale-110 transition">
+    <Heart size={20} className="text-black-500" />
+  </button>
+
+  <div className="p-4 space-y-2">
+          <div className="flex items-center gap-3 text-sm text-gray-600">
                 <span className="flex items-center gap-1">
                   <BedDouble size={16} />
                   {property.bedrooms} bedroom{property.bedrooms > 1 ? "s" : ""}
@@ -112,8 +123,9 @@ const ReachThereQuickly = () => {
                   </span>
                 )}
               </div>
-            </div>
-          </div>
+  </div>
+</div>
+
         ))}
       </div>
     </div>
