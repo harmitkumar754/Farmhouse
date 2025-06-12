@@ -12,7 +12,7 @@ function HighlyAffordable() {
                         <Heart size={18} />
                     </button>
 
-                    <img className="w-full h-60 object-cover" src=".\src\assets\img\0.jpg" alt="Boho Farm" />
+                    <img className="w-full h-60 object-cover" src="public\img\0.jpg" alt="Boho Farm" />
 
                     <div className="p-4">
                         {/* Tags: Bedrooms & Farmhouse */}
@@ -65,7 +65,7 @@ function HighlyAffordable() {
                         <Heart size={18} />
                     </button>
 
-                    <img className="w-full h-60 object-cover" src="\src\assets\img\image.png" alt="Boho Farm" />
+                    <img className="w-full h-60 object-cover" src="public\img\image.png" alt="Boho Farm" />
 
                     <div className="p-4">
                         {/* Tags: Bedrooms & Farmhouse */}

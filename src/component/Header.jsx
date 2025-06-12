@@ -83,7 +83,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 py-2 flex flex-wrap md:flex-nowrap justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-2 mb-2 md:mb-0">
-            <img src="src/assets/img/logo.svg" alt="Logo" className="w-27 h-15" />
+            <img src="public/img/logo.svg" alt="Logo" className="w-27 h-15" />
           </div>
 
           {/* Right Side */}

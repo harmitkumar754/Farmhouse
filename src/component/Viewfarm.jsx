@@ -2,8 +2,8 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight, Navigation, Share2, Heart, ParkingCircle, TreePalm, Snowflake, Tv2, IndianRupee, Check, X, Bed, Users, Star } from "lucide-react";
 
 const images = [
-  "./src/assets/img/0.jpg",
-  "./src/assets/img/image.png"
+  "public/img/0.jpg",
+  "public/img/image.png"
   // replace with your image URLs or imports
 ];
 

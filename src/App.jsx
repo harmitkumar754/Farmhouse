@@ -9,6 +9,7 @@ import PartnerCard from './component/PartnerCard'
 import Footer from './component/Footer'
 import AppDownloadSection from './component/AppDownloadSection'
 import ReachThereQuickly from './component/ReachThereQuickly'
+import Explorecuratedcollections from './component/Explorecuratedcollections'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <>
       <Header />
       <ReachThereQuickly />
+      <Explorecuratedcollections />
       <HighlyAffordable />
       <AboutUs />
       <Viewfarm />

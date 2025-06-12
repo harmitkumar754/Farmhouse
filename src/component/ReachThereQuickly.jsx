@@ -2,8 +2,6 @@ import { BedDouble, Building2, MapPin, Star, Percent ,Heart } from "lucide-react
 
 
 
-import leMeridianImg from "../assets/Farmimg/FH854LeMeridian/FH854LeMeridian.jpg";
-
 
 const properties = [
   {
@@ -17,7 +15,7 @@ const properties = [
     priceNew: "₹20,486",
     discount: "39% off",
     rating: 4.3,
-    image: leMeridianImg,
+    image: "public/Farmimg/FH854LeMeridian/1.jpg",
   },
   {
     id: "FH932",
