@@ -2,8 +2,27 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight, Navigation, Share2, Heart, ParkingCircle, TreePalm, Snowflake, Tv2, IndianRupee, Check, X, Bed, Users, Star } from "lucide-react";
 
 const images = [
-  "public/img/0.jpg",
-  "public/img/image.png"
+  "public/Farmimg/FH854LeMeridian/1.jpg",
+  "public/Farmimg/FH854LeMeridian/2.jpg",
+  "public/Farmimg/FH854LeMeridian/3.jpg",
+  "public/Farmimg/FH854LeMeridian/4.jpg",
+  "public/Farmimg/FH854LeMeridian/5.jpg",
+  "public/Farmimg/FH854LeMeridian/6.jpg",
+  "public/Farmimg/FH854LeMeridian/7.jpg",
+  "public/Farmimg/FH854LeMeridian/8.jpg",
+  "public/Farmimg/FH854LeMeridian/9.jpg",
+  "public/Farmimg/FH854LeMeridian/10.jpg",
+  "public/Farmimg/FH854LeMeridian/11.jpg",
+  "public/Farmimg/FH854LeMeridian/12.jpg",
+  "public/Farmimg/FH854LeMeridian/13.jpg",
+  "public/Farmimg/FH854LeMeridian/14.jpg",
+  "public/Farmimg/FH854LeMeridian/15.jpg",
+  "public/Farmimg/FH854LeMeridian/16.jpg",
+  "public/Farmimg/FH854LeMeridian/17.jpg",
+  "public/Farmimg/FH854LeMeridian/18.jpg",
+  "public/Farmimg/FH854LeMeridian/19.jpg",
+  "public/Farmimg/FH854LeMeridian/20.jpg",
+  
   // replace with your image URLs or imports
 ];
 
@@ -74,9 +93,10 @@ export default function Viewfarm() {
 
         {/* Details */}
         <div className="mt-4">
-          <h2 className="text-xl font-semibold">FH917 | CROWN</h2>
+          <h2 className="text-xl font-semibold">FH854 | Le Meridian</h2>
           <p className="text-gray-600 flex items-center gap-1">
-            <Navigation size={15} strokeWidth={2} /> Vasna Bujarg, Kheda • 174.1km
+            <Navigation size={15} strokeWidth={2} /> Bhathaiya, Daman
+1km
           </p>
           <div className="flex gap-2 mt-2 text-sm">
             <span className="bg-gray-200 px-3 py-1 rounded-full">2 BEDROOMS</span>

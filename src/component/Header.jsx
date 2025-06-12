@@ -6,7 +6,8 @@ import 'react-date-range/dist/theme/default.css';
 import { LocateFixed } from 'lucide-react';
 
 export default function Header() {
-  //date
+  
+ //date
   const [showCalendar, setShowCalendar] = useState(false);
   const [dateRange, setDateRange] = useState([
     {
@@ -75,7 +76,6 @@ export default function Header() {
       }
     );
   };
-
 
   return (
     <>
@@ -243,7 +243,6 @@ export default function Header() {
             </svg>
           </button>
         </div>
-
       </div>
     </>
   );

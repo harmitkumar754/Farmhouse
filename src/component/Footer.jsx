@@ -1,5 +1,6 @@
 import React from 'react';
 import { Instagram, Facebook, Twitter, PhoneCall, HelpCircle, Home, FileText } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -20,8 +21,8 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold mb-2 text-gray-800 hover:text-emerald-600 cursor-pointer">Company</h4>
           <ul className="space-y-1 text-gray-600">
-            <li className="hover:text-emerald-600 cursor-pointer">About Us</li>
-            <li className="hover:text-emerald-600 cursor-pointer">Career</li>
+            <li className="hover:text-emerald-600 cursor-pointer"><Link to="/aboutus">About Us</Link></li>
+            <li className="hover:text-emerald-600 cursor-pointer"><Link to="CareerSection">Career</Link></li>
             <li className="hover:text-emerald-600 cursor-pointer">Blog</li>
           </ul>
         </div>
@@ -29,7 +30,7 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold mb-2 text-gray-800 hover:text-emerald-600 cursor-pointer">Contact</h4>
           <ul className="space-y-1 text-gray-600">
-            <li className="hover:text-emerald-600 cursor-pointer">Help & Support</li>
+            <li className="hover:text-emerald-600 cursor-pointer"><Link to="/ContactUs">Help & Support</Link></li>
             <li className="hover:text-emerald-600 cursor-pointer">List Your Property</li>
           </ul>
         </div>

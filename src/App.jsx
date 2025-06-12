@@ -1,44 +1,44 @@
-import { useState } from 'react'
-import './App.css'
-import Header from './component/Header'
-import HighlyAffordable from './component/HighlyAffordable'
-import AboutUs from './component/AboutUs'
-import Viewfarm from './component/Viewfarm'
-import Cantfind from './component/Cantfind'
-import PartnerCard from './component/PartnerCard'
-import Footer from './component/Footer'
-import AppDownloadSection from './component/AppDownloadSection'
-import ReachThereQuickly from './component/ReachThereQuickly'
-import Explorecuratedcollections from './component/Explorecuratedcollections'
-import Listingdiudaman from './component/Listingdiudaman'
-import CardRow from './component/CardRow'
-import MostVisited from './component/MostVisited'
-import Highrated from './component/Highrated'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Header from './component/Header';
+import Headerwithoutsearch from './component/Headerwithoutsearch';
+import Footer from './component/Footer';
+import Home from './component/Home';
+import AboutUs from './component/AboutUs';
+import Viewfarm from './component/Viewfarm';
+import './App.css';
+import CareerSection from './component/CareerSection';
+import ContactUs from './component/ContactUs';
 
-function App() {
-
+// A wrapper component to handle the layout logic
+function Layout() {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   return (
     <>
-      <Header />
-      <ReachThereQuickly />
-      <Explorecuratedcollections />
-      <Listingdiudaman />
-      <HighlyAffordable />
-      <CardRow />
-      <MostVisited  />
-      <CardRow />
-      <Highrated />
-      <CardRow />
-      {/* <AboutUs /> */}
-      {/* <Viewfarm /> */}
-      <Cantfind />
-      <PartnerCard />
-      {/* <AppDownloadSection /> */}
+      {isHome ? <Header /> : <Headerwithoutsearch />}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/CareerSection" element={<CareerSection />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
+
+        <Route path="/view-farm" element={<Viewfarm />} />
+        <Route path="*" element={<h1 className="text-center text-2xl text-red-600">404 - Page Not Found</h1>} />
+      </Routes>
+
       <Footer />
     </>
-  )
+  );
 }
 
+function App() {
+  return (
+    <Router>
+      <Layout />
+    </Router>
+  );
+}
 
-export default App
+export default App;

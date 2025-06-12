@@ -1,4 +1,5 @@
 import { BedDouble, Building2, MapPin, Star, Percent ,Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 
 
@@ -66,6 +67,7 @@ const ReachThereQuickly = () => {
       <h2 className="text-2xl font-bold mb-6">Reach There Quickly</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {properties.map((property, index) => (
+          <Link to="/view-farm" className="no-underline text-black" key={index}>
          <div
   key={index}
   className="relative bg-white shadow-lg rounded-lg overflow-hidden"
@@ -122,7 +124,7 @@ const ReachThereQuickly = () => {
                 )}
               </div>
   </div>
-</div>
+</div></Link>
 
         ))}
       </div>
