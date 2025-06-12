@@ -167,7 +167,7 @@ const properties = [
   // Add more as needed...
 ];
 
-const PropertySlider = () => {
+const MostVisited = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -200,7 +200,7 @@ const PropertySlider = () => {
 
   return (
     <div className="relative bg-[#3f0000] p-15">
-      <h2 className="text-white text-xl font-bold mb-4">Highly Affordable</h2>
+      <h2 className="text-white text-xl font-bold mb-4">Most Visited</h2>
       <Slider {...settings}>
         {properties.map((property, index) => (
           <div key={index} className="px-2">
@@ -272,4 +272,4 @@ const PropertySlider = () => {
   );
 };
 
-export default PropertySlider;
+export default MostVisited;

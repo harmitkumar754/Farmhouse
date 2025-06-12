@@ -10,6 +10,10 @@ import Footer from './component/Footer'
 import AppDownloadSection from './component/AppDownloadSection'
 import ReachThereQuickly from './component/ReachThereQuickly'
 import Explorecuratedcollections from './component/Explorecuratedcollections'
+import Listingdiudaman from './component/Listingdiudaman'
+import CardRow from './component/CardRow'
+import MostVisited from './component/MostVisited'
+import Highrated from './component/Highrated'
 
 function App() {
 
@@ -19,9 +23,15 @@ function App() {
       <Header />
       <ReachThereQuickly />
       <Explorecuratedcollections />
+      <Listingdiudaman />
       <HighlyAffordable />
-      <AboutUs />
-      <Viewfarm />
+      <CardRow />
+      <MostVisited  />
+      <CardRow />
+      <Highrated />
+      <CardRow />
+      {/* <AboutUs /> */}
+      {/* <Viewfarm /> */}
       <Cantfind />
       <PartnerCard />
       {/* <AppDownloadSection /> */}
