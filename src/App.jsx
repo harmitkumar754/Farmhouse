@@ -8,6 +8,7 @@ import Cantfind from './component/Cantfind'
 import PartnerCard from './component/PartnerCard'
 import Footer from './component/Footer'
 import AppDownloadSection from './component/AppDownloadSection'
+import ReachThereQuickly from './component/ReachThereQuickly'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <Header />
+      <ReachThereQuickly />
       <HighlyAffordable />
       <AboutUs />
       <Viewfarm />
